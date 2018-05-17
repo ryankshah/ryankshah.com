@@ -1,7 +1,7 @@
 nav.nav {
     margin: 0 auto;
 
-    color: #333;
+    color: $navigation_foreground_colour;
 
     ul {
         margin: 0 auto;
@@ -14,7 +14,7 @@ nav.nav {
         li {
             display: inline-block;
 
-            padding: 6px 12px;
+            padding: $navigation_item_padding;
 
             a {
                 position: relative;
@@ -24,24 +24,22 @@ nav.nav {
                 text-decoration: none;
                 text-transform: uppercase;
 
-                -webkit-transition: border .125s ease-in-out;
-                -moz-transition: border .125s ease-in-out;
-                transition: border .125s ease-in-out;
+                @include transition(border .125s ease-in-out);
             }
         }
-        li.logo {
+        li.brand {
+            padding-top: 0;
             vertical-align: middle;
 
-            font-size: 60px;
-            padding-top: 0;
+            font-size: $brand_font_size;
         }
 
         li:hover { // Not logo
             a {
-                border-bottom: 2px solid #333;
+                border-bottom: 2px solid $navigation_foreground_colour;
             }
         }
-        li.logo:hover {
+        li.brand:hover {
             a {
                 border-bottom: 2px solid transparent;
             }

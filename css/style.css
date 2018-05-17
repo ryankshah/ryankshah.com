@@ -196,22 +196,22 @@ nav.nav {
         border-bottom: 2px solid transparent;
         text-decoration: none;
         text-transform: uppercase;
-        -webkit-transition: border .125s ease-in-out;
-        -moz-transition: border .125s ease-in-out;
-        transition: border .125s ease-in-out; }
-    nav.nav ul li.logo {
+        -webkit-transition: border 0.125s ease-in-out;
+        -moz-transition: border 0.125s ease-in-out;
+        transition: border 0.125s ease-in-out; }
+    nav.nav ul li.brand {
+      padding-top: 0;
       vertical-align: middle;
-      font-size: 60px;
-      padding-top: 0; }
+      font-size: 60px; }
     nav.nav ul li:hover a {
       border-bottom: 2px solid #333; }
-    nav.nav ul li.logo:hover a {
+    nav.nav ul li.brand:hover a {
       border-bottom: 2px solid transparent; }
 
 body {
   background: #EFEFEF; }
 
 .container {
-  margin-top: 20px; }
+  margin-top: 40px; }
 
 /*# sourceMappingURL=style.css.map */
