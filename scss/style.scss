@@ -1,1 +1,12 @@
-@import "simple-grid.scss";
+@import "simple-grid";
+
+// Navigation
+@import "navigation";
+
+body {
+    background: #EFEFEF;
+}
+
+.container {
+    margin-top: 20px;
+}

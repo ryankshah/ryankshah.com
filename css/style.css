@@ -178,5 +178,40 @@ p {
 
   .hidden-sm {
     display: block; } }
+nav.nav {
+  margin: 0 auto;
+  color: #333; }
+  nav.nav ul {
+    margin: 0 auto;
+    padding: 0;
+    position: relative;
+    list-style: none;
+    text-align: center; }
+    nav.nav ul li {
+      display: inline-block;
+      padding: 6px 12px; }
+      nav.nav ul li a {
+        position: relative;
+        display: block;
+        border-bottom: 2px solid transparent;
+        text-decoration: none;
+        text-transform: uppercase;
+        -webkit-transition: border .125s ease-in-out;
+        -moz-transition: border .125s ease-in-out;
+        transition: border .125s ease-in-out; }
+    nav.nav ul li.logo {
+      vertical-align: middle;
+      font-size: 60px;
+      padding-top: 0; }
+    nav.nav ul li:hover a {
+      border-bottom: 2px solid #333; }
+    nav.nav ul li.logo:hover a {
+      border-bottom: 2px solid transparent; }
+
+body {
+  background: #EFEFEF; }
+
+.container {
+  margin-top: 20px; }
 
 /*# sourceMappingURL=style.css.map */
