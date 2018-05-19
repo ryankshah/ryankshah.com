@@ -1,0 +1,58 @@
+.hr-text-center {
+    display: flex;
+    flex-basis: 100%;
+    align-items: center;
+    color: $foreground-colour;
+    margin: 8px 0px;
+}
+.hr-text-center::before,
+.hr-text-center::after {
+    content: "";
+    flex-grow: 1;
+    background: $foreground-colour;
+    height: 1px;
+    @include font-size(0px);
+    line-height: 0px;
+    margin: 0px 8px -3px;
+}
+.hr-text-center::before {
+    background-image : linear-gradient(to left,
+                    rgba(255,255,255, 0),
+                    rgba($background-colour, 1) 90%);
+}
+.hr-text-center::after {
+    background-image : linear-gradient(to right,
+                    rgba(255,255,255, 0),
+                    rgba($background-colour, 1) 90%);
+}
+
+.intro {
+    margin: 0 auto;
+    width: 75%;
+
+    @media only screen and (max-width: $breakpoint-small) {
+        width: 100%;
+    }
+}
+
+.section {
+    margin: 0 auto;
+    width: 75%;
+
+    @media only screen and (max-width: $breakpoint-small) {
+        width: 100%;
+    }
+}
+.section-title {
+    border-bottom: 1px solid lighten($foreground-colour, 20);
+    display: inline-block;
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    padding-bottom: 2px;
+
+    @include transition(all .125s ease-in-out);
+}
+.section-title:hover {
+    border-bottom-style: dotted;
+}

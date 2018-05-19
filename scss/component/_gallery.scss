@@ -1,0 +1,21 @@
+.gallery {
+    .sizer, .item {
+        width: 33.333%;
+    }
+
+    .item {
+        float: left;
+
+        img {
+            display: block;
+            max-width: 100%;
+        }
+    }
+
+}
+/* clear fix */
+.gallery:after {
+    content: '';
+    display: block;
+    clear: both;
+}

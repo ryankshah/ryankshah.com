@@ -9,10 +9,6 @@ $font-weight-regular: 400;
 $font-weight-heavy: 700;
 $font-height: 1.5;
 
-// colors
-$dark-grey: #333447;
-$dark-gray: #333447; // for the Americans
-
 // universal
 
 html,
@@ -28,7 +24,6 @@ body {
 
 * {
   font-family: $font-family;
-  color: $dark-grey;
   line-height: $font-height;
 }
 

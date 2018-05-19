@@ -11,7 +11,6 @@ body {
 
 * {
   font-family: "Lato", Helvetica, sans-serif;
-  color: #333447;
   line-height: 1.5; }
 
 h1 {
@@ -178,6 +177,81 @@ p {
 
   .hidden-sm {
     display: block; } }
+.hr-text-center {
+  display: flex;
+  flex-basis: 100%;
+  align-items: center;
+  color: #333;
+  margin: 8px 0px; }
+
+.hr-text-center::before,
+.hr-text-center::after {
+  content: "";
+  flex-grow: 1;
+  background: #333;
+  height: 1px;
+  font-size: 0px;
+  font-size: calculateRem(0px);
+  line-height: 0px;
+  margin: 0px 8px -3px; }
+
+.hr-text-center::before {
+  background-image: linear-gradient(to left, rgba(255, 255, 255, 0), #fefefe 90%); }
+
+.hr-text-center::after {
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0), #fefefe 90%); }
+
+.intro {
+  margin: 0 auto;
+  width: 75%; }
+  @media only screen and (max-width: 33.75em) {
+    .intro {
+      width: 100%; } }
+
+.section {
+  margin: 0 auto;
+  width: 75%; }
+  @media only screen and (max-width: 33.75em) {
+    .section {
+      width: 100%; } }
+
+.section-title {
+  border-bottom: 1px solid #666666;
+  display: inline-block;
+  font-size: 18px;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+  padding-bottom: 2px;
+  -webkit-transition: all 0.125s ease-in-out;
+  -moz-transition: all 0.125s ease-in-out;
+  -ms-transition: all 0.125s ease-in-out;
+  -o-transition: all 0.125s ease-in-out;
+  transition: all 0.125s ease-in-out; }
+
+.section-title:hover {
+  border-bottom-style: dotted; }
+
+.img-circle {
+  height: 180px;
+  width: 180px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%; }
+
+.gallery .sizer, .gallery .item {
+  width: 33.333%; }
+.gallery .item {
+  float: left; }
+  .gallery .item img {
+    display: block;
+    max-width: 100%; }
+
+/* clear fix */
+.gallery:after {
+  content: '';
+  display: block;
+  clear: both; }
+
 nav.nav {
   margin: 0 auto;
   color: #333; }
@@ -193,25 +267,81 @@ nav.nav {
       nav.nav ul li a {
         position: relative;
         display: block;
-        border-bottom: 2px solid transparent;
+        border: 2px solid transparent;
         text-decoration: none;
         text-transform: uppercase;
         -webkit-transition: border 0.125s ease-in-out;
         -moz-transition: border 0.125s ease-in-out;
+        -ms-transition: border 0.125s ease-in-out;
+        -o-transition: border 0.125s ease-in-out;
         transition: border 0.125s ease-in-out; }
     nav.nav ul li.brand {
       padding-top: 0;
       vertical-align: middle;
-      font-size: 60px; }
-    nav.nav ul li:hover a {
+      font-size: 60px;
+      font-size: calculateRem(60px); }
+    nav.nav ul li:hover:not(.brand) a {
       border-bottom: 2px solid #333; }
-    nav.nav ul li.brand:hover a {
-      border-bottom: 2px solid transparent; }
+
+.nav-margin {
+  margin: 0 auto 60px; }
+  @media only screen and (min-width: 33.75em) {
+    .nav-margin {
+      margin-bottom: 20px; } }
+
+.social {
+  margin: 20px 0;
+  padding: 0;
+  position: relative;
+  list-style: none;
+  text-align: center; }
+  .social li {
+    display: inline-block; }
+    .social li a {
+      display: block;
+      padding: 0 10px;
+      position: relative;
+      text-decoration: none;
+      font-size: 24px;
+      font-size: calculateRem(24px); }
+      .social li a i {
+        color: #333;
+        display: block; }
+  .social li:hover i {
+    color: #666666; }
+
+.weapon-grid {
+  padding: 0;
+  position: relative;
+  list-style: none; }
+  .weapon-grid li {
+    display: inline-block; }
+    .weapon-grid li a {
+      display: block;
+      padding: 0 20px;
+      position: relative;
+      text-decoration: none;
+      font-size: 32px;
+      font-size: calculateRem(32px); }
+      .weapon-grid li a i {
+        color: #333;
+        display: block; }
+  .weapon-grid li:first-child a {
+    padding-left: 0; }
+  .weapon-grid li:last-child a {
+    padding-right: 0; }
+  .weapon-grid li:hover i {
+    color: #666666; }
+
+* {
+  color: #333;
+  outline: none; }
 
 body {
-  background: #EFEFEF; }
+  background: #fefefe; }
 
 .container {
-  margin-top: 40px; }
+  margin-top: 40px;
+  padding-bottom: 40px; }
 
 /*# sourceMappingURL=style.css.map */

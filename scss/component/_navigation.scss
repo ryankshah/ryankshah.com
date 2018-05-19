@@ -1,0 +1,120 @@
+nav.nav {
+    margin: $zero_auto;
+
+    color: $navigation_foreground_colour;
+
+    ul {
+        margin: $zero_auto;
+        padding: 0;
+        position: relative;
+
+        list-style: none;
+        text-align: center;
+
+        li {
+            display: inline-block;
+
+            padding: $navigation_item_padding;
+
+            a {
+                position: relative;
+                display: block;
+                border: 2px solid transparent;
+                text-decoration: none;
+                text-transform: uppercase;
+
+                @include transition(border .125s ease-in-out);
+            }
+        }
+        li.brand {
+            padding-top: 0;
+            vertical-align: middle;
+
+            @include font-size($brand_font_size);
+        }
+
+        li:hover:not(.brand) {
+            a {
+                border-bottom: 2px solid $navigation_foreground_colour;
+            }
+        }
+    }
+}
+
+.nav-margin {
+    margin: 0 auto 60px;
+
+    @media only screen and (min-width: $breakpoint-small) {
+        margin-bottom: 20px;
+    }
+}
+
+.social {
+    margin: 20px 0;
+    padding: 0;
+    position: relative;
+    list-style: none;
+    text-align: center;
+
+    li {
+        display: inline-block;
+
+        a {
+            display: block;
+            padding: 0 10px;
+            position: relative;
+            text-decoration: none;
+
+            @include font-size(24px);
+
+            i {
+                color: $foreground-colour;
+                display: block;
+            }
+        }
+    }
+    li:hover {
+        i {
+            color: lighten($foreground-colour, 20);
+        }
+    }
+}
+
+.weapon-grid {
+    padding: 0;
+    position: relative;
+    list-style: none;
+
+    li {
+        display: inline-block;
+
+        a {
+            display: block;
+            padding: 0 20px;
+            position: relative;
+            text-decoration: none;
+
+            @include font-size(32px);
+
+            i {
+                color: $foreground-colour;
+                display: block;
+            }
+        }
+    }
+    li:first-child {
+        a {
+            padding-left: 0;
+        }
+    }
+    li:last-child {
+        a {
+            padding-right: 0;
+        }
+    }
+    li:hover {
+        i {
+            color: lighten($foreground-colour, 20);
+        }
+    }
+}

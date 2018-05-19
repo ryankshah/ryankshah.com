@@ -1,15 +1,24 @@
-@import "simple-grid";
+@import "vendor/simple-grid";
 
-@import "variables";
-@import "mixins";
+@import "util/variables";
+@import "util/mixins";
 
-// Navigation
-@import "navigation";
+@import "base/typography";
+
+@import "component/image";
+@import "component/gallery";
+@import "component/navigation";
+
+* {
+    color: $foreground-colour;
+    outline: none;
+}
 
 body {
-    background: #EFEFEF;
+    background: $background-colour;
 }
 
 .container {
     margin-top: 40px;
+    padding-bottom: 40px;
 }
