@@ -203,7 +203,11 @@ p {
 
 .intro {
   margin: 0 auto;
-  width: 75%; }
+  width: 75%;
+  text-align: justify; }
+  .intro a {
+    border-bottom: 1px dashed #333;
+    text-decoration: none; }
   @media only screen and (max-width: 33.75em) {
     .intro {
       width: 100%; } }

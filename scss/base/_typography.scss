@@ -29,6 +29,12 @@
 .intro {
     margin: 0 auto;
     width: 75%;
+    text-align: justify;
+
+    a {
+        border-bottom: 1px dashed $foreground-colour;
+        text-decoration: none;
+    }
 
     @media only screen and (max-width: $breakpoint-small) {
         width: 100%;

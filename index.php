@@ -4,7 +4,7 @@
         <meta charset="utf-8">
 
         <title>Ryan Shah</title>
-        <meta name="description" content="">
+        <meta name="description" content="A web portfolio with the aim of showcasing how amazing I am.">
         <meta name="author" content="Ryan Shah">
 
         <link rel="stylesheet" href="css/style.css">
@@ -21,11 +21,11 @@
                 <div class="col-12">
                     <nav class="nav">
                         <ul>
-                            <li><a href="about.html">About</a></li>
-                            <li><a href="portfolio.html">Portfolio</a></li>
-                            <li class="brand"><a href="index.html">RS</a></li>
-                            <li><a href="resume.html">Resumé</a></li>
-                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="about.php">About</a></li>
+                            <li><a href="portfolio.php">Portfolio</a></li>
+                            <li class="brand"><a href="">RS</a></li>
+                            <li><a href="resume.php">Resumé</a></li>
+                            <li><a href="contact.php">Contact</a></li>
                         </ul>
                     </nav>
                     <div class="hr-text-center nav-margin" style="width: 80%;">&middot;</div>
@@ -35,7 +35,9 @@
             <div class="row" align="center" id="about">
                 <div class="col-12">
                     <div class="intro">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vel ante purus. Vestibulum vel elit nec urna mollis fermentum. Mauris eget turpis odio. Quisque lectus tortor, viverra sit amet finibus ut, tincidunt in lorem. Nullam interdum dolor et sem pretium facilisis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aenean condimentum ut justo blandit pulvinar. Praesent at nibh vel enim pulvinar sodales. Vestibulum pellentesque iaculis risus vel feugiat. Vestibulum id arcu convallis augue accumsan facilisis et pellentesque sapien. Aliquam ut nisl urna.
+                        My name is Ryan Shah, and I am an avid computer scientist. Currently finishing my Bachelors of Science in Computer Science at <a href="https://www.hw.ac.uk/">Heriot-Watt University</a>, my current ambition is to progress towards doing a PhD in the field of Cyber Security. The areas of research most pertinent to myself are Network Security and Machine Learning, while also having interest and experience in other fields including - but not limited to - Software Engineering and Web Design/Development.
+                        <br /><br />
+                        Aside from computer science, I enjoy a multitude of activities such as swimming, running and travelling to explore places I find amusing. I also enjoy taking photographs of anything that my brain considers fascinating, as well as playing acoustic and bass guitar, with a touch of what some may call <em>"singing"</em>.
                     </div>
                     <ul class="social">
                         <li><a href="https://github.com/ryankshah"><i class="fab fa-github"></i></a></li>
