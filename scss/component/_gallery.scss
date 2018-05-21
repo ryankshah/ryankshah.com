@@ -1,4 +1,5 @@
 .gallery {
+    margin: 0 auto;
     .sizer, .item {
         width: 33.333%;
     }
@@ -8,7 +9,16 @@
 
         img {
             display: block;
-            max-width: 100%;
+            margin: auto;
+            max-width: 90%;
+            padding-bottom: 10%;
+
+            @include transition(all .125s ease-in-out);
+        }
+    }
+    .item:hover {
+        img {
+            @include transform(scale(1.05));
         }
     }
 

@@ -49,42 +49,25 @@
             <br />
             <div class="row" id="portfolio">
                 <div class="section">
-                    <h3 class="section-title">Portfolio</h1>
                     <div class="gallery">
                         <div class="sizer"></div>
-                        <div class="item">
-                            <img src="http://via.placeholder.com/500x500">
-                        </div>
-                        <div class="item">
-                            <img src="http://via.placeholder.com/500x500">
-                        </div>
-                        <div class="item">
-                            <img src="http://via.placeholder.com/500x500">
-                        </div>
-                        <div class="item">
-                            <img src="http://via.placeholder.com/500x500">
-                        </div>
-                        <div class="item">
-                            <img src="http://via.placeholder.com/500x500">
-                        </div>
-                        <div class="item">
-                            <img src="http://via.placeholder.com/500x500">
-                        </div>
+                        <?php
+                            $access_token = "356117486.98e2bc4.4b6476bae97d4ad4966249072cfbf3b6";
+                            $photo_count = 9;
+                            $json_link = "https://api.instagram.com/v1/users/self/media/recent/?";
+                            $json_link .="access_token={$access_token}&count={$photo_count}";
+                            $json = file_get_contents($json_link);
+                            $obj = json_decode(preg_replace('/("\w+"):(\d+)/', '\\1:"\\2"', $json), true);
+                            foreach ($obj['data'] as $post) {
+                                echo '<div class="item">';
+                                    echo '<a href="https://instagram.com/ryankshah"><img src="'.$post['images']['standard_resolution']['url'].'" alt="" /></a>';
+                                echo '</div>';
+                            }
+                        ?>
                     </div>
                 </div>
             </div>
             <br /><br />
-            <div class="row" id="resume">
-                <div class="section">
-                    <h3 class="section-title">Resumé</h1>
-                </div>
-            </div>
-            <br /><br />
-            <div class="row">
-                <div class="section" id="contact">
-                    <h3 class="section-title">Contact</h1>
-                </div>
-            </div>
         </div>
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>

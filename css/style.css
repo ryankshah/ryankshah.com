@@ -238,13 +238,28 @@ p {
   -moz-border-radius: 50%;
   border-radius: 50%; }
 
-.gallery .sizer, .gallery .item {
-  width: 33.333%; }
-.gallery .item {
-  float: left; }
-  .gallery .item img {
-    display: block;
-    max-width: 100%; }
+.gallery {
+  margin: 0 auto; }
+  .gallery .sizer, .gallery .item {
+    width: 33.333%; }
+  .gallery .item {
+    float: left; }
+    .gallery .item img {
+      display: block;
+      margin: auto;
+      max-width: 90%;
+      padding-bottom: 10%;
+      -webkit-transition: all 0.125s ease-in-out;
+      -moz-transition: all 0.125s ease-in-out;
+      -ms-transition: all 0.125s ease-in-out;
+      -o-transition: all 0.125s ease-in-out;
+      transition: all 0.125s ease-in-out; }
+  .gallery .item:hover img {
+    -moz-transform: scale(1.05);
+    -o-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05); }
 
 /* clear fix */
 .gallery:after {
