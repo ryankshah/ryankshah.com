@@ -15,8 +15,14 @@
         <![endif]-->
     </head>
     <body>
-        <div class="container">
-            hello
+        <div class="container-404">
+            <h1>
+                404
+                <small>
+                    This is not the page you're looking for.
+                    <p><a href="index.php">Take me home</a></p>
+                </small>
+            </h1>
         </div>
     </body>
 </html>

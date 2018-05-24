@@ -62,3 +62,11 @@
 .section-title:hover {
     border-bottom-style: dotted;
 }
+
+p.muted {
+    margin: 0 auto;
+    text-transform: uppercase;
+    @include font-size(14px);
+    padding-right: 16px;
+    color: lighten($foreground-colour, 10);
+}

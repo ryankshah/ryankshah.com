@@ -67,9 +67,14 @@
                             }
                         ?>
                     </div>
+                    <p class="muted" align="right">More at <a href="https://instagram.com/ryankshah">ryankshah</a> <i class="fab fa-instagram"></i></p>
+                    <footer>
+                        <p class="muted">Copyright &copy; Ryan Shah 2018</p>
+                    </footer>
                 </div>
             </div>
-            <br /><br />
+
+
         </div>
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>

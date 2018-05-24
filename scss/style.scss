@@ -8,6 +8,7 @@
 @import "component/image";
 @import "component/gallery";
 @import "component/navigation";
+@import "component/footer";
 
 * {
     color: $foreground-colour;
@@ -21,4 +22,28 @@ body {
 .container {
     margin-top: 40px;
     padding-bottom: 40px;
+}
+
+.container-404 {
+    margin: 0 auto;
+    @include center(both);
+
+    h1 {
+        text-align: center;
+        display: inline-block;
+        @include font-size(64px);
+
+        small {
+            display: block;
+            @include font-size(32px);
+
+            p {
+                a {
+                    text-decoration: none;
+                    border-bottom: 1px dashed #333;
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
 }
