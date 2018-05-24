@@ -34,6 +34,22 @@
             <br />
             <div class="row">
                 <div class="col-12">
+                    <div class="section">
+                        <h1 class="section-title">About Me</h1>
+                        <p>
+                            My name is Ryan Shah, and I am an avid computer scientist. Currently finishing my Bachelors of Science in Computer Science at <a href="https://www.hw.ac.uk/">Heriot-Watt University</a>, my current ambition is to progress towards doing a PhD in the field of Cyber Security. The areas of research most pertinent to myself are Network Security and Machine Learning, while also having interest and experience in other fields including - but not limited to - Software Engineering and Web Design/Development.
+                        </p>
+                        <p><strong>Do I have any hobbies?</strong></p>
+                        <p>
+                            In general, I have many hobbies which include swimming, running, travelling to explore places I find amusing and taking photographs of anything that my brain considers fascinating. I am also very musical oriented, primarily playing acoustic and bass guitar - although I played the drums for most of my childhood.
+                        </p>
+                        <p><strong>Where have I travelled?</strong></p>
+                        <p>
+                            I have spent many summers in Thailand, but I have more recently taken cruise trips across the Mediterranean and around Alaska. One of my favourite places that I have visited is Madrid. It is one of the places that I have visited where the atmosphere felt homely, as well as the city itself being extremely cultural and vibrant - whilst keeping a strong sense of history throughout the destination. There are two places, on my bucket list, which I have yet to visit - <a href="#">Santorini</a> and <a href="#">Bora Bora</a>.
+                        </p>
+                        <p><strong>More soon...</strong></p>
+                    </div>
+
                     <footer>
                         <p class="muted">Copyright &copy; Ryan Shah 2018</p>
                     </footer>
